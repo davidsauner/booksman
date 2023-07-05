@@ -13,7 +13,9 @@ model books {
   author       String
   publisher    String
   purchaseDate DateTime @db.Timestamp(6)
+  cover        String
   read         Boolean  @default(false)
   grade        Int?
   review       String?
+  
 }

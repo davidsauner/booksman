@@ -18,11 +18,11 @@ export async function getBook(id: number) {
 }
 
 export async function createBook(book: CreateBook) {
-  const { title, author, publisher, purchaseDate } = book;
+  const { title, author, publisher, purchaseDate, cover } = book;
 ;
 
   const result = await connection.books.create({
-    data: { title, author, publisher, purchaseDate}
+    data: { title, author, publisher, purchaseDate, cover}
   })
 
   return result

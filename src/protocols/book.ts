@@ -4,6 +4,7 @@ export type Book = {
   author: string;
   publisher: string;
   purchaseDate: Date;
+  cover: string;
   read: boolean;
   review: string;
   grade: number;
